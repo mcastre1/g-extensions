@@ -18,5 +18,11 @@ chrome.action.onClicked.addListener(async (tab) => {
         });
 
         console.log("Yay");
+
+        if (nextState == 'ON') {
+            const listings = document.querySelectorAll(".listing-item");
+
+            console.log(listings.textContent);
+        }
     }
 });
